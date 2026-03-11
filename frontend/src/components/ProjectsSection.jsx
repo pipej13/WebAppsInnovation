@@ -26,7 +26,6 @@ const projects = [
     title: "Fitness Tracker",
     category: "Bienestar",
     description: "App de seguimiento de rutinas de ejercicio, nutrición y progreso físico.",
-    image: "https://images.unsplash.com/photo-1461896836934- voices?w=600&h=400&fit=crop",
     image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=400&fit=crop",
     tags: ["iOS", "HealthKit", "Wearables"]
   }
