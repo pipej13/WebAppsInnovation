@@ -1,34 +1,38 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Custom styles for Apps Innovation SAS */
+
+.text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #2563EB, #4F46E5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.card-hover {
+    transition: all 0.3s ease;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 40px -10px rgba(6, 81, 237, 0.2);
 }
 
-.App-link {
-    color: #61dafb;
+.btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 rounded-full px-8 py-4 font-medium transition-all;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.4);
+}
+
+.btn-secondary {
+    @apply bg-white text-slate-900 border border-slate-200 hover:bg-slate-50 rounded-full px-8 py-4 font-medium transition-all;
+}
+
+.section-padding {
+    @apply py-20 md:py-32;
+}
+
+.container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
